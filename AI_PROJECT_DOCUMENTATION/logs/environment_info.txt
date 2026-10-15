@@ -1,0 +1,10 @@
+=== EndoClean Environment Information ===
+OS: Darwin 27.2.0 (arm64)
+Python: 3.13.7 (v3.13.7:bcee1c32211, Aug 14 2025, 19:10:51) [Clang 16.0.0 (clang-1600.0.26.6)]
+PyTorch: 2.14.0
+Torchvision: 0.29.0
+Scikit-Learn: 1.8.0
+Numpy: 2.4.2
+Pandas: 3.0.0
+Apple Silicon MPS Acceleration Available: True
+NVIDIA CUDA Acceleration Available: False

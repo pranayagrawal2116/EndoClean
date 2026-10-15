@@ -1,0 +1,9 @@
+feature_name,data_type,spatial_dim,normalized_mean,normalized_std,description,role
+R_Channel,uint8 / float32,224x224,0.485,0.229,"Red color channel intensity. Crucial for detecting active bleeding, erythema, and vascular lesions (angiectasia).",Input Channel 1
+G_Channel,uint8 / float32,224x224,0.456,0.224,Green color channel intensity. Key for mucosal boundary contrast and structural tissue texture delineation.,Input Channel 2
+B_Channel,uint8 / float32,224x224,0.406,0.225,Blue color channel intensity. Absorbed strongly by hemoglobin; aids depth estimation and bile distinction.,Input Channel 3
+ResNet50_layer1,float32 tensor,56x56x256,Variable (ReLU),Variable,"Low-level Gabor edge detectors, color gradients, texture primitives (Frozen pre-trained weights).",Intermediate Representation
+ResNet50_layer2,float32 tensor,28x28x512,Variable (ReLU),Variable,Intermediate motif and textural junction representations (Frozen pre-trained weights).,Intermediate Representation
+ResNet50_layer3,float32 tensor,14x14x1024,Variable (ReLU),Variable,"High-level anatomical shape parts, mucosal folding patterns (Fine-tuned).",Trainable Feature Map
+ResNet50_layer4,float32 tensor,7x7x2048,Variable (ReLU),Variable,"Diagnostic pathology semantics (ulcer crater, vascular ectasia clusters). Source layer for Grad-CAM explainability.",Trainable Feature Map
+FC_Logits,float32 tensor,5,N/A,N/A,Unnormalized class scores mapping to 5 target diagnostic categories.,Output Logits

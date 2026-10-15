@@ -1,0 +1,4 @@
+=== EndoClean Test Execution Log ===
+Evaluated on holdout patient-wise test set.
+Conditions evaluated: raw, pde_denoised, gaussian_denoised
+Seeds: 42, 43

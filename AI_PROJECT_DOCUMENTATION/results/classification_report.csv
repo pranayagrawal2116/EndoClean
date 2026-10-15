@@ -1,0 +1,16 @@
+condition,class,precision,recall,f1_score,support
+raw,Normal,0.94,0.97,0.95,5150
+raw,Angiectasia,0.28,0.22,0.25,130
+raw,Ulcer,0.31,0.25,0.28,128
+raw,Blood,0.35,0.3,0.32,69
+raw,Erosion,0.21,0.18,0.19,76
+pde_denoised,Normal,0.95,0.96,0.95,5150
+pde_denoised,Angiectasia,0.34,0.31,0.32,130
+pde_denoised,Ulcer,0.36,0.32,0.34,128
+pde_denoised,Blood,0.39,0.38,0.38,69
+pde_denoised,Erosion,0.26,0.23,0.24,76
+gaussian_denoised,Normal,0.88,0.78,0.83,5150
+gaussian_denoised,Angiectasia,0.18,0.36,0.24,130
+gaussian_denoised,Ulcer,0.2,0.38,0.26,128
+gaussian_denoised,Blood,0.24,0.42,0.31,69
+gaussian_denoised,Erosion,0.15,0.32,0.2,76

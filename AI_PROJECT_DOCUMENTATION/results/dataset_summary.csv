@@ -1,0 +1,12 @@
+class_name,total_samples,percentage,target_study_class,clinical_relevance
+Normal,34338,72.81,True,Healthy Mucosa
+Ileo-cecal valve,4189,8.88,False,Excluded / Other Anatomical Landmark
+Reduced Mucosal View,2906,6.16,False,Excluded / Other Anatomical Landmark
+Pylorus,1529,3.24,False,Excluded / Other Anatomical Landmark
+Angiectasia,866,1.84,True,Primary GI Pathology
+Ulcer,854,1.81,True,Primary GI Pathology
+Foreign Bodies,776,1.65,False,Excluded / Other Anatomical Landmark
+Lymphangiectasia,592,1.26,False,Excluded / Other Anatomical Landmark
+Erosion,506,1.07,True,Primary GI Pathology
+Blood,446,0.95,True,Primary GI Pathology
+Erythematous,159,0.34,False,Excluded / Other Anatomical Landmark
